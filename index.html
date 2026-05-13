@@ -60,8 +60,20 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   .card {
@@ -172,17 +184,24 @@
 
   <main>
     <div class="grid">
-      <a class="card" href="https://moon470an-sys.github.io/Indonesia-Golf-Club/" target="_blank" rel="noopener">
-        <div class="card-icon">⛳</div>
-        <h2 class="card-title">Indonesia Golf Club</h2>
-        <p class="card-desc">인도네시아 골프 클럽 정보를 제공합니다.</p>
-        <span class="card-btn">바로가기</span>
-      </a>
-
       <a class="card" href="https://moon470an-sys.github.io/palm-dashboard/" target="_blank" rel="noopener">
         <div class="card-icon">🌴</div>
         <h2 class="card-title">Palm Dashboard</h2>
         <p class="card-desc">팜 농장 운영 현황을 실시간으로 모니터링하는 대시보드입니다.</p>
+        <span class="card-btn">바로가기</span>
+      </a>
+
+      <a class="card" href="https://moon470an-sys.github.io/Indonesia-Shipping-Intelligence/" target="_blank" rel="noopener">
+        <div class="card-icon">🚢</div>
+        <h2 class="card-title">Indonesia Shipping Intelligence</h2>
+        <p class="card-desc">인도네시아 해운·물류 정보 및 인텔리전스 대시보드입니다.</p>
+        <span class="card-btn">바로가기</span>
+      </a>
+
+      <a class="card" href="https://moon470an-sys.github.io/Indonesia-Golf-Club/" target="_blank" rel="noopener">
+        <div class="card-icon">⛳</div>
+        <h2 class="card-title">Indonesia Golf Club</h2>
+        <p class="card-desc">인도네시아 골프 클럽 정보를 제공합니다.</p>
         <span class="card-btn">바로가기</span>
       </a>
 
@@ -197,13 +216,6 @@
         <div class="card-icon">📚</div>
         <h2 class="card-title">Indonesia Law Q&amp;A</h2>
         <p class="card-desc">인도네시아 법률 관련 질문과 답변을 정리한 자료실입니다.</p>
-        <span class="card-btn">바로가기</span>
-      </a>
-
-      <a class="card" href="https://moon470an-sys.github.io/Indonesia-Shipping-Intelligence/" target="_blank" rel="noopener">
-        <div class="card-icon">🚢</div>
-        <h2 class="card-title">Indonesia Shipping Intelligence</h2>
-        <p class="card-desc">인도네시아 해운·물류 정보 및 인텔리전스 대시보드입니다.</p>
         <span class="card-btn">바로가기</span>
       </a>
     </div>
